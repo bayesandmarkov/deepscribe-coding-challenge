@@ -67,9 +67,25 @@ export function Chatbot(props: {
       <div className="flex-grow overflow-auto p-4 rounded-lg shadow-md">
         {messages.map((message, index) => (
           <div key={index} className={`mb-2 ${message.sender === "User" ? "text-right" : "text-left"}`}>
-            <span className={`inline-block p-2 rounded-lg ${message.sender === "User" ? "bg-gray-700 text-white" : "bg-gray-300 text-black"}`}>
-              {message.text}
-            </span>
+            {message.sender === "Bot" ? (
+              <div className="space-y-2">
+                <span className="inline-block p-2 rounded-lg bg-gray-300 text-black">
+                  {message.text.split(/<quote>[\s\S]*?<\/quote>/)}
+                </span>
+                {message.text.match(/<quote>([\s\S]*?)<\/quote>/) && (
+                  <div className="flex items-center gap-2 p-2">
+                    <span className="text-blue-500 text-xl">💡</span>
+                    <span className="text-gray-200">
+                      {message.text.match(/<quote>([\s\S]*?)<\/quote>/)![1]}
+                    </span>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <span className="inline-block p-2 rounded-lg bg-gray-700 text-white">
+                {message.text}
+              </span>
+            )}
           </div>
         ))}
       </div>

@@ -82,7 +82,7 @@ Currently, there is no method to handle large transcripts that might exceed the 
 
 
 *Q: How might you improve the UI interface?*<br>
-Currently, I'm using some basic prompt engineering to require the response to "quote" from the document in its thinking process. This is not a very friendly UI interface -- a better approach (as a v2!) would be to dynamically render the source text so it "highlights" the relevant quotes.
+Currently, I'm using 💡 to highlight that the AI's response/thinking process was sourced from the document. This is not a very friendly UI interface -- a better approach (as a v2!) would be to dynamically render the source text so it "highlights" the relevant quotes.
 
 *Q: How would you handle edge cases like incomplete transcripts or ambiguous questions?*<br>
 The current setup uses simple prompting to prevent ambigious transcripts/incomplete context (by asking the system to say "I don't know"), but more complex configurations such as asking the system to generate a confidence score of its responses combined with some good evaluation system can be implemented. Again, this is a more complex setup but would be a great v2!
