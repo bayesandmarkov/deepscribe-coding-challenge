@@ -6,6 +6,7 @@ Date: March 8, 2025
 
 What SOAPChat can do:<br>
 ✅ Answer questions about SOAP notes (in .txt files) in an intuitive chatbot interface<br>
+✅ Provides source attribution from medical document, ensuring trust in chatbot<br>
 ✅ Stores SOAP notes in NoSQL distributed database (MongoDB is the only connection currently offered)<br>
 ✅ Maintains conversational history when chatting with document, allowing for context to be maintained
 
@@ -76,3 +77,12 @@ You can generate examples of SOAP documents on ChatGPT, or download some example
 ![Chatbot Demo](./public/chatbot_demo.png) 
 
 ## Future Steps/Improvements
+*Q: How do you handle large transcripts?*<br>
+Currently, there is no method to handle large transcripts that might exceed the context window. One approach would be to perform chunking, which is the idea of splitting up a large document into smaller documents. The smaller documents would likely have some overlap in text, allowing for the system to understand and "piece" back together the long text. Another solution would be to implement RAG everytime a query is made, which will help locate the specific "chunk" of text that is relevant to the query.
+
+
+*Q: How might you improve the UI interface?*<br>
+Currently, I'm using some basic prompt engineering to require the response to "quote" from the document in its thinking process. This is not a very friendly UI interface -- a better approach (as a v2!) would be to dynamically render the source text so it "highlights" the relevant quotes.
+
+*Q: How would you handle edge cases like incomplete transcripts or ambiguous questions?*<br>
+The current setup uses simple prompting to prevent ambigious transcripts/incomplete context (by asking the system to say "I don't know"), but more complex configurations such as asking the system to generate a confidence score of its responses combined with some good evaluation system can be implemented. Again, this is a more complex setup but would be a great v2!

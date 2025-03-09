@@ -10,6 +10,7 @@ from langchain_core.runnables.history import RunnableWithMessageHistory
 from pydantic import BaseModel
 import uuid
 from langchain_mongodb.chat_message_histories import MongoDBChatMessageHistory
+from api.prompts.soap_chatbot import system_prompt
 
 # Load environment variables
 load_dotenv(override=True)
@@ -66,12 +67,9 @@ async def get_latest_text():
 @app.post("/chat/")
 async def chat_with_llm(request: MessageRequest):
     try:
-        # Use LangChain to get a response from the LLM
         prompt = ChatPromptTemplate.from_messages(
             [
-                ("system", f'''You are an assistant explaining a medical document to a patient. 
-                 The medical document is: {request.context_from_file}\n
-                 If you don't know the answer, say "I don't know".'''),
+                ("system", system_prompt.substitute(document_text=request.context_from_file)),
                 MessagesPlaceholder(variable_name="history"),
                 ("human", "{question}"),
             ]

@@ -1,5 +1,4 @@
 import { UploadDocumentsForm } from "@/components/UploadDocumentsForm";
-import { Button } from "@/components/ui/button";
 import { LuckyButton } from "@/components/LuckyButton";
 
 export default function Home() {

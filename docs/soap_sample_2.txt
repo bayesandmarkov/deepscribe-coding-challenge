@@ -1,0 +1,11 @@
+Psychiatrist SOAP Note Subjective: The patient, a 45-year-old male, reports experiencing increased anxiety and insomnia over the past month. He describes persistent worries about his job security and financial stability, stating, "I can't seem to turn my brain off at night." He rates his anxiety as 8/10
+and his insomnia as 9/10 in severity. He denies any suicidal ideation or psychotic symptoms. Objective: The patient appears anxious and fatigued. His speech is rapid but coherent. He maintains good eye contact and his thought processes are logical. Vital signs are within normal
+limits. The patient completed the GAD-7 anxiety scale, scoring 17, indicating severe anxiety. Assessment: Generalized Anxiety Disorder (GAD) with associated insomnia. The patient's
+symptoms have worsened due to recent stressors related to job security and finances.
+Plan:
+• Continue with cognitive-behavioral therapy (CBT) sessions weekly.
+• Start Escitalopram 10 mg daily to address anxiety symptoms.
+• Prescribe Zolpidem 5 mg as needed for sleep, with careful monitoring. • Schedule a follow-up appointment in two weeks to assess medication efficacy and side
+effects. • Encourage patient to practice relaxation techniques and maintain a regular sleep
+schedule.
+• Provide patient with educational materials on anxiety management and support
