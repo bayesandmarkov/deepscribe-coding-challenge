@@ -6,7 +6,7 @@ Date: March 8, 2025
 
 What 🧼Chat can do:<br>
 ✅ Answer questions about SOAP notes (in .txt files) in an intuitive chatbot interface<br>
-✅ Provides source attribution from medical document, ensuring trust in chatbot<br>
+✅ Provides source attribution 💡 from medical document, ensuring trust in chatbot<br>
 ✅ Stores SOAP notes in NoSQL distributed database (MongoDB is the only connection currently offered)<br>
 ✅ Maintains conversational history when chatting with document, allowing for context to be maintained
 
