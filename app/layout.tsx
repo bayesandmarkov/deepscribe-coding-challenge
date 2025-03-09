@@ -39,7 +39,7 @@ export default function RootLayout({
           <nav className="absolute top-2 right-4 m-2 z-1">
           <Button asChild variant="outline" size="default">
                     <a
-                      href="https://github.com/will-pang/generic_document_chatbot"
+                      href="https://github.com/bayesandmarkov/deepscribe-coding-challenge"
                       target="_blank"
                     >
                       <GithubIcon className="size-3" />

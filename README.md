@@ -1,6 +1,20 @@
 ## Deepscribe AI Engineer Coding Challenge
-Author: William Pang
+Author: William Pang <br>
 Date: March 8, 2025
+
+🧼SOAPChat is a chatbot that allows you to converse with SOAP notes.
+
+What SOAPChat can do:<br>
+✅ Answer questions about SOAP notes (in .txt files) in an intuitive chatbot interface<br>
+✅ Stores SOAP notes in NoSQL distributed database (MongoDB is the only connection currently offered)<br>
+✅ Maintains conversational history when chatting with document, allowing for context to be maintained
+
+🛠️ Project's Tech Stack:
+- Langchain
+- FastAPI
+- Next.Js
+- MongoDB
+- OpenAI
 
 ## Getting Started
 
@@ -29,7 +43,7 @@ pip install -r requirements.txt
 npm install
 ```
 
-6. Create a `.env` folder in the project root, with the following variables:
+6. Create a `.env` file in the project root, with the following variables. You can also find an example under `docs\env.txt`:
 ```
 MONGO_URI=
 DB=
@@ -49,3 +63,16 @@ Open http://localhost:3000 with your browser to see the result.
 ```
 uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload
 ```
+
+## Let's go (Chrome Recommended)!
+1. Once everything is setup, you should be greeted by this landing page:
+![Landing Page](./public/landing_page.png) 
+
+You can generate examples of SOAP documents on ChatGPT, or download some examples under `docs/soap_sample.txt` and upload it (must be `.txt` format) by pressing the "Upload .txt File" button.
+
+> **Note:** Currently, the "I'm Feeling Lucky" button is not supported. The idea was to pick a random example stored in the database of choice, but I did not have enough time to implement this.
+
+2. Once the document is uploaded, you will be routed to a new page that displays the uploaded text, as well as a chatbot where you can start asking questions!
+![Chatbot Demo](./public/chatbot_demo.png) 
+
+## Future Steps/Improvements
