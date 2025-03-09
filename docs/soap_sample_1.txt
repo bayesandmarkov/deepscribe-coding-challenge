@@ -1,0 +1,57 @@
+**Patient Name:** John Doe  
+**Date of Visit:** 03/07/2025  
+**DOB:** 05/14/1980  
+**MRN:** 123456789  
+**Provider:** Dr. Jane Smith, MD  
+**Chief Complaint:** Persistent cough and shortness of breath
+
+---
+
+**S**ubjective:  
+The patient is a 44-year-old male presenting with a persistent, non-productive cough for the past two weeks. He reports mild shortness of breath on exertion but denies fever, chills, or chest pain. He notes that the cough worsens at night and disrupts his sleep. No recent travel or sick contacts. He has a history of seasonal allergies but has not experienced similar symptoms before.
+
+---
+
+**O**bjective:  
+**Vital Signs:**  
+- Temperature: 98.6°F  
+- Blood Pressure: 126/78 mmHg  
+- Pulse: 82 bpm  
+- Respiratory Rate: 18 breaths/min  
+- SpO2: 97% on room air  
+
+**Physical Exam:**  
+- General: Well-nourished, in no acute distress.  
+- HEENT: No nasal congestion, postnasal drip, or sinus tenderness.  
+- Lungs: Mild expiratory wheezing bilaterally. No rales or rhonchi.  
+- Cardiac: Regular rate and rhythm, no murmurs, rubs, or gallops.  
+- Abdomen: Soft, non-tender, non-distended.  
+- Extremities: No edema, clubbing, or cyanosis.  
+
+---
+
+**A**ssessment:  
+1. Persistent cough with mild wheezing, likely due to reactive airway disease or upper airway cough syndrome.  
+2. No signs of infection or pneumonia.  
+3. Possible mild asthma exacerbation.  
+
+---
+
+**P**lan:  
+1. Start albuterol inhaler PRN for wheezing and shortness of breath.  
+2. Trial of antihistamine (loratadine 10mg daily) to rule out postnasal drip.  
+3. Follow-up in one week if symptoms persist or worsen.  
+4. Consider pulmonary function testing if symptoms do not improve.  
+5. Patient advised to avoid known allergens and maintain hydration.  
+
+**Patient Education:** Discussed potential triggers and proper inhaler technique. Encouraged smoking cessation (patient denies current smoking).
+
+---
+
+**Follow-Up:**  
+- Return to the clinic in one week or sooner if symptoms worsen.  
+- Seek emergency care if experiencing severe shortness of breath or chest pain.  
+
+**Provider Signature:**  
+Dr. Jane Smith, MD
+
