@@ -2,9 +2,9 @@
 Author: William Pang <br>
 Date: March 8, 2025
 
-🧼SOAPChat is a chatbot that allows you to converse with SOAP notes.
+🧼Chat is a chatbot that allows you to converse with SOAP notes.
 
-What SOAPChat can do:<br>
+What 🧼Chat can do:<br>
 ✅ Answer questions about SOAP notes (in .txt files) in an intuitive chatbot interface<br>
 ✅ Provides source attribution from medical document, ensuring trust in chatbot<br>
 ✅ Stores SOAP notes in NoSQL distributed database (MongoDB is the only connection currently offered)<br>
