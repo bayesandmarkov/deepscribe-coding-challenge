@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Deepscribe AI Engineer Coding Challenge
+Author: William Pang
+Date: March 8, 2025
 
 ## Getting Started
 
-First, run the development server:
+1. Ensure that you have Node.js installed, which can be found on the [official website]( https://nodejs.org/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+2. Clone this project onto your local machine
+```
+git clone https://github.com/bayesandmarkov/deepscribe-coding-challenge/
+```
+3. (Recommended) Using your terminal, `cd` into the project root folder, create a virtual environment:
+```
+python3 -m venv venv
+source venv/bin/activate
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Note that the latest Python version is required (as of writing, it is **Python 3.13.2**)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. Install all the required Python packages
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+pip install -r requirements.txt
+```
 
-## Learn More
+5. Install all the required Node.js packages
+```
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+6. Create a `.env` folder in the project root, with the following variables:
+```
+MONGO_URI=
+DB=
+COLLECTION=
+OPENAI_API_KEY=
+CONVERSATIONAL_HISTORY_COLLECTION=
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+7. In your IDE of choice, run the development server via the terminal:
+```
+npm run dev
+```
+Open http://localhost:3000 with your browser to see the result.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+8. In a separate terminal, run fastapi using Uvicorn:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload
+```
